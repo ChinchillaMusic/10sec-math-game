@@ -1,0 +1,13 @@
+.main {
+  background-color: #F5F5F5;
+}
+
+.title {
+  color: #EAD7D7;
+  font-size: 75px;
+}
+
+.subtitle {
+  color: rgba(0, 0, 255, 0.5);
+  font-size: 30px;
+}

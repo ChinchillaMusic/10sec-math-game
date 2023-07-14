@@ -30,7 +30,7 @@ $(document).ready(function() {
         question.equation = String(num1) + ' + ' + String(num2);
         break;
       case 2:
-        question.answer = num1 - num2;
+        question.answer = Math.abs(num1 - num2);
         question.equation = String(num1) + ' - ' + String(num2);
         break;
       case 3:

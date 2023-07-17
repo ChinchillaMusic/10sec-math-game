@@ -30,16 +30,18 @@ $(document).ready(function() {
         question.equation = String(num1) + ' + ' + String(num2);
         break;
       case 2:
-        question.answer = Math.abs(num1 - num2);
-        question.equation = String(num1) + ' - ' + String(num2);
+        num3 = num1 + num2;
+        question.answer = num2;
+        question.equation = String(num3) + ' - ' + String(num1);
         break;
       case 3:
         question.answer = num1 * num2;
         question.equation = String(num1) + ' x ' + String(num2);
         break;
       case 4:
-        question.answer = Math.ceil(num1 / num2);
-        question.equation = String(num1) + ' / ' + String(num2);
+        let num3 = num1 * num2;
+        question.answer = num2;
+        question.equation = String(num3) + ' / ' + String(num1);
         break;
     }
     return question;

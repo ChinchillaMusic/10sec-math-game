@@ -21,6 +21,7 @@ $(document).ready(function() {
 
   let questionGenerator = function() {
     let question = {};
+    let num3;
     const num1 = randomNumberGenerator(10);
     const num2 = randomNumberGenerator(10);
     const equationType = randomNumberGenerator(4);
@@ -39,7 +40,7 @@ $(document).ready(function() {
         question.equation = String(num1) + ' x ' + String(num2);
         break;
       case 4:
-        let num3 = num1 * num2;
+        num3 = num1 * num2;
         question.answer = num2;
         question.equation = String(num3) + ' / ' + String(num1);
         break;
